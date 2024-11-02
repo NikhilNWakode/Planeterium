@@ -18,4 +18,4 @@ Planetarium is a responsive web application that allows users to search for info
 To run the Planetarium website locally, follow these steps:
 1. Clone the repository: 
    ```bash
-   git clone https://github.com/yourusername/planetarium.git
+   git clone https://github.com/NikhilNWakode/Planeterium.git
