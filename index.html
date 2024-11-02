@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planeterium</title>
+    <link rel="shortcut icon" href="images\favicon-32x32.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="maincontent.css">
+    <link rel="stylesheet" href="sidebar.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="saturn.png" alt="logo img">
+            <h1>Planetarium</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a class="links" href="">Home</a></li>
+                <li><a class="links" href="">About Us</a></li>
+                <li><a id="sign-up"  href="">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="search">
+            <label for="nameInput">Search For Planets</label>
+            <input type="text" id="nameInput" placeholder="Eg.Jupiter">
+            <button onclick="findObject()">Search</button>
+        </div>
+        <div class="content">
+           <div class="img-details">
+                <div class="content-left">
+                    <div class="img-div">
+                        <img src="" alt="">
+                    </div>
+                </div>
+                
+                <div class="content-right">
+                    <p class="details"></p>
+                </div>
+            </div>
+            <div class="description">
+                <p class="description" ></p>
+            </div>
+
+        </div>
+    </main>
+    <div class="main_box">
+        <input type="checkbox" id="check" />
+        <div class="btn_one">
+          <label for="check" style="color: white">
+            <i class="fa-solid fa-bars"></i>
+          </label>
+        </div>
+        <div class="sidebar_menu">
+         
+  
+          <div class="btn_two">
+            <label for="check" style="color: grey">
+              <i class="fa-solid fa-xmark"></i>
+            </label>
+          </div>
+  
+          <div class="menu">
+            <ul>
+              <li id ="" class="search_box">
+                 <label for="search"><i class="fa-solid fa-magnifying-glass fa-2xs" style="color: #ffffff;"></i></label> 
+                  <input id="search" type="text" placeholder="Search">
+              </li>
+              <li class="link">
+                  <i id="Home" class="fa-solid fa-house fa-2xs" style="color: #ffffff;"></i>
+                <a href="#">Home</a>
+              </li>
+              <li class="link">
+                  <i class="fa-solid fa-people-group fa-2xs" style="color: #ffffff;"></i>
+                <a href="#">About Us</a>
+              </li>
+              <li class="link">
+                  <i class="fa-solid fa-right-to-bracket fa-2xs" style="color: #ffffff;"></i>
+                <a href="#">SignUp</a>
+              </li>
+              
+            </ul>
+          </div>
+  
+          <div class="social_media">
+            <ul>
+              <a class="social" href="#"><i class="fa-brands fa-facebook"></i></i></a>
+              <a class="social" href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a class="social" href="#"><i class="fa-brands fa-instagram"></i></i></a>
+              <a class="social" href="#"><i class="fa-brands fa-youtube"></i></a>
+            </ul>
+          </div>
+        </div>
+      </div>
+<script src="planet.js" ></script>
+<script src="app.js" ></script>
+</body>
+</html>

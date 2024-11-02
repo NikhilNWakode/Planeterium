@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Oxygen:wght@300;400;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Tulpen+One&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-weight: bold;
+    color:#E2E2B6;
+}
+
+body {
+    
+    background-color: #021526;
+    color:#E2E2B6;
+    overflow-x: hidden; 
+    font-family: 'Montserrat',sans-serif;
+}
+body::-webkit-scrollbar {
+    display: none;
+  }
+
+header {
+    position: sticky;
+    top:60x;
+    height: 60px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid rgb(0, 0, 0);
+    
+   
+}
+
+.logo{
+    min-width: 5%;
+    max-width: 20%;
+    display: flex;
+    gap:5px;
+    align-items: center;
+}
+.logo img {
+    width:2.2rem;
+    filter: invert(1);
+    margin-left: 0.75rem;
+}
+.logo h1{
+    font-family: 'Tulpen one';
+    letter-spacing: 0.25rem;
+}
+nav {
+    max-width:80%;
+}
+nav ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul li{
+    list-style: none;
+    
+    
+}
+.links{
+    text-decoration: none;
+    border: 2px solid rgb(241, 241, 171);
+    margin-left: 1.1rem;
+    margin-right: 0.5rem;
+    padding: 0.25rem 1rem;
+    border-radius: 25px;
+    transition: background-color 0.5s ease;
+    
+}
+
+.links:hover {
+    background-color: rgb(241, 241, 171);
+    color: #021526;
+}
+
+#sign-up {
+    text-decoration: none;
+    border: 2px solid rgb(241, 241, 171);
+    margin-left: 1.5rem;
+    margin-right: 0.5rem;
+    padding: 0.25rem 1rem;
+    border-radius: 25px;
+    background-color: rgb(241, 241, 171);
+    color: #021526;
+   
+    
+}
+
+#sign-up:hover{
+    background-color: #f6f653;
+}
+
+.main {
+    background-color:rgb(3, 25, 44);
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    padding: 1.2rem;
+    background-color: rgb(3, 25, 44);
+    margin-bottom: 1rem;
+   
+}
+.search label {
+    font-family: 'Oswald';
+    font-size: 1.4rem;
+}
+
+.search input {
+    padding: 0.5rem;
+    border-radius: 25px;
+    width:400px;
+    font-family: '';
+    margin-left: 0.7rem;
+    outline: none;
+    color:#021526
+}
+
+.search button {
+    background-color: #E2E2B6;
+    color: black;
+    font-size: 0.95rem;
+    padding:5px 15px;
+    border-radius: 20px;
+    margin-left: 0.25rem;
+}
+.search button:hover {
+    box-shadow: 1.5px 1.5px white;
+    transform: translateY(-1px);
+}
+
+
+@media (max-width: 955px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        right: -200px;
+        top: 0px;
+
+    }
+
+    .links {
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 0.5rem;
+       
+    }
+
+    #sign-up {
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 0.5rem;
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content-left, .content-mid, .content-right {
+        width: 90%;
+        margin-bottom: 1rem;
+    }
+
+   .search {
+    max-height: 80px;
+    
+   }
+}
+
+@media (min-width: 956px) {
+    .btn_one {
+        opacity: 0;
+    }
+}
+
+@media (max-width:469px){
+    .search label {
+        display: none;
+    }
+    .links{
+        display: none;
+    }
+    #sign-up{
+        display: none;
+    }
+}
+
+@media (max-width:715px){
+    .img-details {
+        flex-direction: column;
+    }
+}
+
+@media screen {
+    body {
+        overflow-x: hidden;
+    }
+    
+}
