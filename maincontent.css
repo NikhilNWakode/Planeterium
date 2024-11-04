@@ -4,6 +4,7 @@
     padding: 3rem;
     width: 95%;
     max-width: 1200px;
+    min-height: 100vh;
     margin: 1.3rem auto;
     display: flex;
     flex-direction: column;
